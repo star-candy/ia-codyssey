@@ -1,9 +1,12 @@
 def power(base, exponent):
     result = 1.0
-    for _ in range(abs(exponent)):
+    for i in range(abs(exponent)):
         result *= base
     if exponent < 0:
         return 1.0 / result
+    
+    if result.is_integer():
+        return int(result)
     return result
 
 def main():
@@ -22,7 +25,7 @@ def main():
         return
 
     result = power(number, exponent)
-    print(f"Result: {result}")
+    print("Result:", result)
 
 if __name__ == "__main__":
     main()
