@@ -10,6 +10,7 @@ def customSort(numberList):
             left.append(x)
         else:
             right.append(x)
+            
     
     return customSort(left) + [pivot] + customSort(right)
 
