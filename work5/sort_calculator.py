@@ -13,7 +13,6 @@ def customSort(numberList):
     
     return customSort(left) + [pivot] + customSort(right)
 
-
 def printSortedList(numberList):
     print ("sorted:", end=" ")
     for i in numberList:
@@ -21,7 +20,7 @@ def printSortedList(numberList):
 
 def main():
     try:
-        numberInput = list(map(float, input("정렬할 수를 입력하세요").split()))
+        numberInput = list(map(float, input("정렬할 수를 입력하세요: ").split()))
         if(len(numberInput) < 1):
             print("Invalid input. 입력된 수가 없습니다")
             return
