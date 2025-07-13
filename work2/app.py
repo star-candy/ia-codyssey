@@ -9,4 +9,4 @@ def hello_world():
     return "Hello, DevOps!" # 반환 값이 전달 및 출력됨
 
 if __name__ == "__main__": # import시 실행 방지
-    app.run(host="0.0.0.0", port=80) #host 0.0.0.0 = 모든 IP에서 해당 서버 접근 가능
+    app.run(host="0.0.0.0", port=5000) #host 0.0.0.0 = 모든 IP에서 해당 서버 접근 가능
