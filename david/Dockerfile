@@ -2,7 +2,7 @@
 FROM python:3
 
 # 2. 작업 디렉토리 설정
-WORKDIR /david
+WORKDIR /app
 
 # 3. 로컬 파일 전체 복사
 COPY . .
